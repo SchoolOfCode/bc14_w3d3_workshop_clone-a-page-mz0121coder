@@ -5,5 +5,78 @@ Login and sign up on right - rounded buttons
 Middle - h2 'Order food to your door'
 Input - enter address
 select - delivery
-button find food
+button to find food
 */
+/* How to create icon buttons
+ https://www.w3schools.com/howto/howto_css_icon_buttons.asp */
+
+/* body {
+  font-family: 'FontAwesome', 'Open Sans', sans-serif;
+} */
+
+:root {
+  --reusable-color-1: black;
+  --reusable-color-2: white;
+}
+
+body {
+  margin: 10px;
+  background-image: url('https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/3dec1d1b7e1b5874.png');
+  background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account-action {
+  border-radius: 200px;
+  margin-right: 10px;
+}
+
+#login-button {
+  background-color: var(--reusable-color-2);
+  color: var(--reusable-color-1);
+}
+
+#signup-button {
+  background-color: var(--reusable-color-1);
+  color: var(--reusable-color-2)
+}
+
+#find-food {
+  border-radius: 5px;
+  background-color: var(--reusable-color-1);
+  color: var(--reusable-color-2);
+}
+
+span {
+  text-decoration: underline;
+}
+
+.input-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.heading, .input-icons, .paragraph {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #555;
+} */
+
+/* option {
+  padding-left: 24px;
+  background-repeat: no-repeat;
+  background-position: 4px center;
+} */
